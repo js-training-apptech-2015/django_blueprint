@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css">
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            {% block content %}
+                Override me
+            {% endblock %}
+        </div>
+      <footer class="container">
+        <p>&copy; Company 2013</p>
+      </footer>
+    </div>
+        <script src="{{ STATIC_URL }}js/vendor/jquery-1.10.1.js"></script>
+        <script src="{{ STATIC_URL }}js/vendor/bootstrap.js"></script>
+        <script src="{{ STATIC_URL }}js/main.js"></script>
+    </body>
+</html>
